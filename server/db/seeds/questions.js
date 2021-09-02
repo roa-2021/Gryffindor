@@ -1,25 +1,25 @@
 
 exports.seed = knex => {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('questions').del()
     .then(() => {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('questions').insert([
         {
           id: 1, 
-          question: 'Who owns Balto?', 
+          question: 'Who is Balto\'s human?', 
           possible_answers: '["Bren","Casey","Kafele","Kelly"]', 
           correct_answer: 'Casey'
         },
         {
           id: 2, 
-          question: 'What is Freya\'s dog\'s name?', 
+          question: 'What is Freya\'s doggo\'s name?', 
           possible_answers: '["Saiga", "Taiga", "Molly", "George"]', 
           correct_answer: 'Saiga'
         },
         {
           id: 3, 
-          question: 'Which came first: the chicken or the egg?', 
+          question: 'Which came first, the chicken or the egg?', 
           possible_answers: '["The chicken", "The dog", "The egg", "The Jury is still out"]', 
           correct_answer: 'The Jury is still out'
         },
@@ -32,12 +32,12 @@ exports.seed = knex => {
         {
           id: 5, 
           question: 'What does API stand for?', 
-          possible_answers: '["Application Programming Interface", "Application Programming Interlace", "Associative Plugging Array", ""]', 
+          possible_answers: '["Associative Plugging Index", "Application Programming Interlace", "Application Programic Interface", "Application Programming Interface"]', 
           correct_answer: 'Application Programming Interface'
         },
         {
           id: 6, 
-          question: 'Which equality operator is the preference of Emily', 
+          question: 'Which equality operator does Emily prefer most?', 
           possible_answers: '["=", "==", "===", "===="]', 
           correct_answer: '==='
         },
@@ -61,9 +61,9 @@ exports.seed = knex => {
         },
         {
           id: 10, 
-          question: 'What does npm stand for', 
-          possible_answers: '["Negativly Proportional Model", "Node Package Manager", "Nuclear Planning Manual", "It doesn\'t stand for anything"]', 
-          correct_answer: 'It doesn\'t stand for anything'
+          question: 'What does npm stand for?', 
+          possible_answers: '["Negativly Proportional Model", "Node Package Manager", "Nuclear Planning Manual", "It doesn\'t stand for anything!"]', 
+          correct_answer: 'It doesn\'t stand for anything!'
         }
       ])
     })
