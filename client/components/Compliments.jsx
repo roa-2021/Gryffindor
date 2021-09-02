@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { complimentapi } from '../apis/quiz.js'
+import { getcompliment } from '../apis/compliments.js'
 
 function Compliment () {
     const [comp, setComp] = useState("test")
@@ -9,7 +9,7 @@ function Compliment () {
     }, [])
 
     const refreshCompliment = () => {
-        complimentapi()
+        getcompliment()
         .then(getcomp => {
          setComp(getcomp) 
         })
