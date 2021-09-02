@@ -1,12 +1,20 @@
 import React from 'react'
+import {Route} from "react-router-dom" // yay! this exists!
 
-import Fruit from './Fruit'
+import LandingPage from './LandingPage'
+import QuizPage from './QuizPage.jsx'
+import CongratsPage from './CongratsPage'
 
-const App = () => {
+function App () {
   return (
     <>
-      <h1>Hola! Fruit time!</h1>
-      <Fruit />
+      <h1>I say... GRYFFINDOR!!!</h1>
+
+      <div className='main'> {/*anand to decide*/}
+        <Route exact path='/' component={LandingPage} />
+        <Route path='/question' component={QuizPage} />
+        <Route path='/congrats' component={CongratsPage}/>
+      </div>
     </>
   )
 }
