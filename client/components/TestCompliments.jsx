@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { complimentapi } from '../apis/quiz'
+import { complimentapi } from '../apis/quiz.js'
 
 function Compliment () {
-    const [comp, setComp] = useState(null)
+    const [comp, setComp] = useState("test")
 
     useEffect(() => {
         refreshCompliment()
@@ -10,12 +10,15 @@ function Compliment () {
 
     const refreshCompliment = () => {
         complimentapi()
-        .then(getcomp => setComp(getcomp))
+        .then(getcomp => {
+         setComp(getcomp) 
+        })
+
     }
+    console.log(comp)
     return (
         <>
-        <h1>hello world</h1>
-        <img src={comp}/>
+        <h1>{comp.compliment}</h1>
         </>
     )
 }
