@@ -5,5 +5,6 @@ export const getFruit = () => {
     .then(response => {
       console.log(response)
       return response.body
+      
     })
 }
