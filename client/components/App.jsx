@@ -5,6 +5,8 @@ import LandingPage from './LandingPage'
 import QuizPage from './QuizPage.jsx'
 import CongratsPage from './CongratsPage'
 
+import Compliment from './TestCompliments'
+
 function App () {
   return (
     <>
@@ -15,6 +17,8 @@ function App () {
         <Route path='/question' component={QuizPage} />
         <Route path='/congrats' component={CongratsPage}/>
       </div>
+
+      <Compliment />
     </>
   )
 }
