@@ -6,6 +6,7 @@ const connection = knex(config[env])
 const getQuestionById = (id, db = connection) => {
   return db('questions')
     .where('id', id)
+    .first()
 }
 
 module.exports = {
