@@ -9,9 +9,12 @@ router.get('/:id', (req, res) => {
     .then(question => {
       question = {
         ...question,
-        possibleAnswers: question.possible_answers,
-        correctAnswer: question.correct_answer
+        possibleAnswers: JSON.parse(question.possible_answers),
+        correctAnswer: question.correct_answer,
       }
+      delete question.possible_answers
+      delete question.correct_answer
+
       return res.json(question)
     })
     .catch(err => {
