@@ -18,7 +18,7 @@ function Insult () {
 
     return (
         <>
-        <h3>{salty.insult}</h3>
+        <p className='make-red'>{salty.insult}</p>
         </>
     )
 }

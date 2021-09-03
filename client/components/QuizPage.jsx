@@ -45,13 +45,15 @@ function Quiz () {
   }
 
   return (
-    <div>
+    <div class="myquiz">
       <h1>Quiz Page</h1>
       <Question q={quest.question}/>
       <Answer a={quest.possibleAnswers} ca={quest.correctAnswer} />
       {/* <Compliment />
       <Insult /> */}
-      <button onClick={refreshQuestion}> Next Question </button>
+      <div>
+        <button className='button-next' onClick={refreshQuestion}> Next Question </button>
+      </div>
     </div>
   )
 }

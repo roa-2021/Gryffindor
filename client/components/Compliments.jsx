@@ -17,7 +17,7 @@ function Compliment () {
     }
     return (
         <>
-        <h3>{comp.compliment}</h3>
+        <p className='make-green'>{comp.compliment}</p>
         </>
     )
 }

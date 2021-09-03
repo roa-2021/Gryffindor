@@ -3,3 +3,117 @@ html, body {
   color: #28282e;
   font-family: 'Lato', sans-serif;
 }
+
+* { 
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+  text-decoration: none 
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center ;
+  background-color: rgb(150, 150, 146);
+  color: white;
+}
+
+.header * {
+  margin: 0;
+  padding: 200;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  height: 8vh;
+  padding: 0 8px;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.rightanswer {
+  border-color: #04AA6D;
+  color: green;
+}
+.wronganswer {
+border-color: #f44336;
+color: red;
+}
+
+.getcompliment {
+border-color: #ff9800;
+color: orange;
+
+}
+
+.button2 {background-color: #00ba3e;} /* Blue */
+.button1 {background-color: #f44336;} /* Red */ 
+
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/background_image.jpg');
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.button {
+  width: 150px;
+  color: #eeebe4;
+  background-color: #56a734;
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #222;
+  border-radius: 3px;
+}
+
+.button-next {
+  width: 150px;
+  color: #eeebe4;
+  background-color: rgb(54, 77, 193);
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #222;
+  border-radius: 3px;
+}
+
+.button-next:hover {
+  color: #eeebe4;
+  /* background-color: #7ae0ff; */
+  background-color: rgb(85, 106, 210);
+  border: 2px solid #555;
+}
+
+.button:hover {
+  color: #eee;
+  /* background-color: #7ae0ff; */
+  background-color: #73bc54;
+  border: 2px solid #555;
+}
+
+p {
+  font-size: 30px;
+  color: #eeebe4;
+}
+
+.make-green {
+  color: rgb(61, 160, 61)
+}
+
+.make-red {
+  color: rgb(188, 37, 67);
+}
