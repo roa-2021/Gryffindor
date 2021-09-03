@@ -3,6 +3,7 @@ const router = express.Router()
 
 const db = require('../db/db')
 
+// eg: localhost:3000/api/v1/questions/3
 router.get('/:id', (req, res) => {
   const requestedId = req.params.id
   return db.getQuestionById(requestedId)
