@@ -15,10 +15,10 @@ function Insult () {
         })
 
     }
-    console.log(salty)
+
     return (
         <>
-        <h1>{salty.insult}</h1>
+        <h3>{salty.insult}</h3>
         </>
     )
 }

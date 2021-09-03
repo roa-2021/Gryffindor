@@ -5,22 +5,16 @@ import LandingPage from './LandingPage'
 import QuizPage from './QuizPage.jsx'
 import CongratsPage from './CongratsPage'
 
-import Compliment from './Compliments'
-import Insult from './Insults'
-
 function App () {
   return (
     <>
-      <h1>I say... GRYFFINDOR!!!</h1>
+      {/* <h1>I say... GRYFFINDOR!!!</h1> */}
 
       <div className='main'> {/*anand to decide*/}
         <Route exact path='/' component={LandingPage} />
         <Route path='/question' component={QuizPage} />
         <Route path='/congrats' component={CongratsPage}/>
       </div>
-
-      <Compliment />
-      <Insult />
     </>
   )
 }

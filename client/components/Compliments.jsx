@@ -15,10 +15,9 @@ function Compliment () {
         })
 
     }
-    console.log(comp)
     return (
         <>
-        <h1>{comp.compliment}</h1>
+        <h3>{comp.compliment}</h3>
         </>
     )
 }
