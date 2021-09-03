@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getinsult } from '../apis/insults.js'
 
 function Insult () {
-    const [salty, setSalty] = useState("test")
+    const [salty, setSalty] = useState(null)
 
     useEffect(() => {
         refreshInsult()
@@ -18,7 +18,7 @@ function Insult () {
 
     return (
         <>
-        <p className='make-red'>{salty.insult}</p>
+        {salty ? <p className='make-red'>{salty.insult}</p> : <p>the sorting hat is thinking....</p>}
         </>
     )
 }
