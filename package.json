@@ -8,7 +8,8 @@
   "license": "ISC",
   "scripts": {
     "start": "node server",
-    "build": "npm run webpack",
+    // "build": "npm run webpack",
+    "build": "knex migrate:latest",
     "dev": "run-p dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon server",
@@ -61,7 +62,7 @@
   "devDependencies": {
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "sqlite3": "^4.2.0",
+    "sqlite3": "^4.2.0"
   },
 
   "engines": {
