@@ -48,9 +48,9 @@ function Quiz () {
     <div>
       <h1>Quiz Page</h1>
       <Question q={quest.question}/>
-      <Answer a={quest.possibleAnswers} ca={quest.correctAnswer} next={refreshQuestion} />
-      <Compliment />
-      <Insult />
+      <Answer a={quest.possibleAnswers} ca={quest.correctAnswer} />
+      {/* <Compliment />
+      <Insult /> */}
       <button onClick={refreshQuestion}> Next Question </button>
     </div>
   )
