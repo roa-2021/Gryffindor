@@ -6,7 +6,7 @@ export default function StartButton() {
   return (
     <div>
       <Link to="/question">
-        <button>Start Quiz!</button>
+        <button className='button'>Start Quiz!</button>
       </Link>
     </div>
   )

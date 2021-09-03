@@ -6,7 +6,7 @@ import Compliment from './Compliments'
 import Insult from './Insults'
 
 function Answer (props) {
-  const [compSwitch, setCompSwitch] = useState(undefined)
+  const [compSwitch, setCompSwitch] = useState("hmmmmmm...")
 
   function proceed (e) {
     if (e.target.innerHTML == props.ca) {
@@ -29,7 +29,7 @@ function Answer (props) {
   }
 
   useEffect(() => {
-    setCompSwitch(undefined)
+    setCompSwitch("hmmmmmm...")
   }, [props.ca])
 
   return (
@@ -40,7 +40,7 @@ function Answer (props) {
             props.a.map(ans => {
               return (
                 <li key={ans}>
-                  <button onClick={(e) => proceed(e)}>
+                  <button className='button' onClick={(e) => proceed(e)}>
                     {ans}
                   </button>
                 </li>

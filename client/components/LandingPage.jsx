@@ -4,10 +4,12 @@ import StartButton from './StartButton'
 function LandingPage () {
   return (
     <>
-      <div>
-          <h1>Landing Page</h1>
+      <div className="alpha">
+          <h1>Welcome to the Roa Quiz!</h1>
       </div>
+      <div>
       <StartButton />
+      </div >
     </>
   )
 }
